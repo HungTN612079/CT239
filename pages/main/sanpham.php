@@ -44,6 +44,19 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
                         <p>Mã sản phẩm : <?php echo $row_chitiet['masp'] ?></p>
                     </div>
                     <div class="p_rating">
+                        <p><b>Viết đánh giá của bạn</b></p>
+
+                        <!-- Rating here -->
+                        <ul class="list-inline rating" title="Average Rating">
+                            @for($count=1; $count<=5; $count++) {
+                                @php($count<=rating) {
+                                    $color = 'color:#ffcc00;';
+                                } else {
+                                    $color = 'color:#ccc;';
+                                }
+                            }
+                            @endphp
+                        </ul>
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span>
