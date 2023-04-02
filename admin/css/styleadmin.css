@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+a {
+  text-decoration: none;
+}
+ul.admin-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul.admin-list li {
+  margin: 5px;
+  padding: 10px;
+}
+.clear {
+  clear: both;
+}
+.wrapper {
+  border: 1px solid #000;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#top {
+  background: #002b5c;
+  width: 100%;
+  padding: 5px;
+}
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  height: auto;
+  align-items: center;
+  color: #ffffff;
+}
+.top-content a {
+  color: #ffffff;
+  padding: 10px;
+}
+#main {
+  display: flex;
+  width: 99%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.admin-list {
+  width: 20%;
+  background: #002b5c;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.main-content {
+  margin-left: 10px;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+.admin-list a {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.admin-list a:hover {
+  color: #fdb602;
+}
+h3 {
+  margin: 10px 0;
+}
+.canhchinh {
+  display: flex;
+  justify-content: end;
+}
+.add h3,
+.lietke h3 {
+  display: flex;
+  border: 1px solid #ccc;
+  height: 40px;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 25px 50px;
+  width: 350px;
+  justify-content: center;
+}
+.add-input {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background: #009688;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.input-text {
+  padding: 10px;
+  width: 50%;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.input-select-option {
+  padding: 10px;
+  width: 20%;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.input-select-option option {
+  padding: 10px;
+}
+.lietke {
+  margin-top: 20px;
+}
+.lietke table {
+  border: none;
+}
+.lietke table th {
+  background: #002b5c;
+  color: #fff;
+}
+table {
+  width: 100%;
+  font-size: 17px;
+}
+table th {
+  height: 70px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: justify;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+.del-Update {
+  width: 3%;
+}
+.color-del-update {
+  color: #0000ee;
+}

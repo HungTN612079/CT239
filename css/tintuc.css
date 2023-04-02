@@ -1,0 +1,31 @@
+h3{
+    font-size: 30px;
+}
+
+
+.body_tt{
+    border: 1px solid rgb(193, 186, 186);
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.tintuc_class{
+    position: relative;
+    text-decoration: none;
+}
+.img_tt{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 10px;
+    padding: 20px 0 50px 0;
+}
+.title-product_tt{
+    font-size: 20px;
+    
+}

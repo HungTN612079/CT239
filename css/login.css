@@ -1,0 +1,120 @@
+.breadcrumb-box {
+    width: 100%;
+    float: left;
+}
+
+.breadcrumb-box ul {
+    background: url(/images/icon-home.png) no-repeat left top 20px;
+    padding-left: 18px;
+    float: left;
+}
+
+.breadcrumb {
+    padding: 17px 15px;
+    margin: 0 0 0 15px;
+}
+
+.breadcrumb-box li {
+    float: left;
+}
+
+.breadcrumb>li {
+    display: inline-block;
+}
+
+.breadcrumb-box li a {
+    font-size: 13px;
+    color: #fff;
+}
+
+.breadcrumb-box li a:after {
+    content: " ";
+    width: 7px;
+    display: inline-block;
+    height: 7px;
+    background: url(/images/next-bcrum.png) no-repeat 0px 0px;
+    margin: 0 7px;
+}
+
+.content-box {
+    background: #fff;
+    padding: 25px 10px 20px;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.box-title {
+    color: #5d5d5d;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    position: relative;
+}
+
+.box-title:after {
+    content: "";
+    width: 220px;
+    height: 3px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background: #ed3237;
+}
+
+#formAcount .form-group {
+    width: 30%;
+    display: block;
+    margin: 15px auto;
+}
+
+.checkbox-user {
+    color: #666;
+    display: inline-flex;
+    width: 100%;
+    margin: 15px 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    margin: 4px 0 0;
+    line-height: normal;
+}
+
+#checkbox-content {
+    display: block;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+.btn-register, .btn-login {
+    padding: 6px 20px;
+    border: none;
+    margin: auto;
+    display: block;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .5s ease;
+}
+
+.btn-register {
+    background: #00a859;
+}
+
+.btn-login {
+    background: #000066;
+}
+
+.form-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 10px;
+}
