@@ -1,0 +1,21 @@
+# css
+    1.  Giỏ hàng file menu, cart 
+    (   
+        copy css cart qua thanhtoan, shipping ==> nữa gộp 3 file này lại sau tạm thời để riêng
+    );
+    2.  Bổ sung css file danhmuc
+    3. Responsive menu
+
+# Chưa làm
+    3.  Đăng nhập, đăng ký, thay đổi mật khẩu
+    4.  Footer
+    5.  Xóa all (cart)
+    6.  Thêm nhiều số lượng cùng lúc
+    7.  Đánh giá
+    8.  Bổ sung email khi đặt hàng
+    9.  Lỗi lấy ngày
+    10. Bài viết, mô tả thông tin sản phẩm, nội dung
+    11. Responsive all
+    12. Bộ lọc 
+    13. Giới thiệu về cửa hàng
+    14. Back-end (bổ sung)
