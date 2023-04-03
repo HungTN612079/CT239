@@ -26,15 +26,15 @@ $row_bv_title = mysqli_fetch_array($query_bv);
             <div class="newfeed">
                 <div class="slide-wrapper">
                     <a href="http://localhost:3000/index.php?quanly=baiviet&id=8"> 
-                        <div class="slide"><img src="/images/Baiviet1.jpg" width="250px" height="250px" ></div> </a>
+                        <div class="slide"><img src="/images/tintuc/Baiviet1.jpg" width="250px" height="250px" ></div> </a>
                     <a href="http://localhost:3000/index.php?quanly=baiviet&id=9"> 
-                        <div class="slide"><img src="/images/Baiviet2.jpg" width="250px" height="250px"></div> </a>
+                        <div class="slide"><img src="/images/tintuc/Baiviet2.jpg" width="250px" height="250px"></div> </a>
                     <a href="http://localhost:3000/index.php?quanly=baiviet&id=10"> 
-                        <div class="slide"><img src="/images/Baiviet3.jpg" width="250px" height="250px"></div> </a>
+                        <div class="slide"><img src="/images/tintuc/Baiviet3.jpg" width="250px" height="250px"></div> </a>
                     <a href="http://localhost:3000/index.php?quanly=baiviet&id=12"> 
-                        <div class="slide"><img src="/images/baiviet5.jpg" width="250px" height="250px"></div> </a>
+                        <div class="slide"><img src="/images/tintuc/baiviet5.jpg" width="250px" height="250px"></div> </a>
                     <a href="http://localhost:3000/index.php?quanly=baiviet&id=14"> 
-                        <div class="slide"><img src="/images/baiviet6.jpg" width="250px" height="250px"></div> </a>
+                        <div class="slide"><img src="/images/tintuc/baiviet6.jpg" width="250px" height="250px"></div> </a>
                 </div>
             </div>  
         </div>  
