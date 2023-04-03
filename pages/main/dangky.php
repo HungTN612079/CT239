@@ -15,7 +15,7 @@ if (isset($_POST['dangky'])) {
         
         $_SESSION['id_khachhang'] = mysqli_insert_id($mysqli);
        // header('Location:index.php?quanly=giohang');
-        header("Location: index.php?quanly=index");
+       // header("Location: index.php?quanly=index");
     }
 }
 ?>
@@ -59,6 +59,13 @@ if (isset($_POST['dangky'])) {
                     <td>
                         <input type="password" id="repassword" name="repassword" value=""/>
                         <span id="repassword_error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Họ và tên: </td>
+                    <td>
+                        <input type="text" id="hovaten" name="hovaten" value=""/>
+                        <span id="hovaten_error"></span>
                     </td>
                 </tr>
                 <tr>
