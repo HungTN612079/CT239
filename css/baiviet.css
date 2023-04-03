@@ -7,7 +7,7 @@
     padding-bottom: 60px;
     border-radius: 10px;
     margin-bottom: 5px;
-    
+      
 }   
 h2{
     font-size: 40px;
@@ -18,21 +18,17 @@ h2{
 h2:hover{
     color: blue;
     transition: 0.5s;
-    
 }
 
 h3{
-
    font-size: 25px;
    position: relative;
-   
    font-weight: bold;
    position: relative;
    left: 20px;
 }
 p{
-    position: relative;
-    
+    position: relative; 
     font-size: 20px;
     padding: 10px 20px 5px 20px ;
     text-indent: 30px;
@@ -45,6 +41,192 @@ p{
     position: relative;
     left: 100px;
     font-size: 18px;
-    
     padding: 20px;
+}
+
+
+
+.link-newfeed{
+    background-color: #333;
+    position: fixed;
+    height: 250px;
+    width: 250px;
+    left: 88px;
+    top: 475px;
+    
+}
+.link-newfeed b {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    bottom: 5px;   
+}
+
+.right-slide{
+    position: fixed;
+    left: 88px;
+    top: 515px;
+}
+.newfeed{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    height: 200px;
+    width: 250px;
+    margin: 0 auto;
+}
+.slide-wrapper{
+    /*thay doi chieu dai*/
+    width: 1500px;
+    -webkit-animation: slide 20s ease infinite;
+}
+
+.slide{
+    float: left;
+}
+
+@-webkit-keyframes slide {
+    15% {margin-left: 0px;}
+    25% {margin-left: -250px;}
+    35% {margin-left: -250px;}
+    45% {margin-left: -500px;}
+    55% {margin-left: -500px;}
+    65% {margin-left: -750px;}
+    75% {margin-left: -750px;}
+    85% {margin-left: -1000px;}
+    95% {margin-left: -1000px;}
+}
+@media (max-width: 1366px ) {
+    .sidebar{
+     display: none;
+    }
+    .baiviet_khung {
+        position: relative;
+        right: 120px;
+    }
+    .right-slide{
+        position: fixed;
+        left: 10px;
+        font-size: 10px;
+        top: 515px;
+    }
+    img{
+        width: 170px;
+        height: 170px;
+    }
+    .link-newfeed{
+        position: fixed;
+        left: 10px;
+        font-size: 10px;
+        top: 480px;
+        height: 200px;
+        width: 170px;
+    }
+    .newfeed{
+        height: 170px;
+        width: 170px;
+    }
+    @-webkit-keyframes slide {
+        15% {margin-left: 0px;}
+        25% {margin-left: -170px;}
+        35% {margin-left: -170px;}
+        45% {margin-left: -340px;}
+        55% {margin-left: -340px;}
+        65% {margin-left: -510px;}
+        75% {margin-left: -510px;}
+        85% {margin-left: -680px;}
+        95% {margin-left: -680px;}
+    }
+}
+ 
+
+
+@media (max-width: 1304px ) {
+    .sidebar{
+        display: none;
+       }
+       .baiviet_khung {
+           position: relative;
+           right: 120px;
+       }
+       .right-slide{
+           position: fixed;
+           left: 10px;
+           font-size: 10px;
+           top: 515px;
+       }
+       img{
+           width: 170px;
+           height: 170px;
+       }
+       .link-newfeed{
+           position: fixed;
+           left: 10px;
+           font-size: 10px;
+           top: 480px;
+           height: 200px;
+           width: 170px;
+       }
+       .newfeed{
+           height: 170px;
+           width: 170px;
+       }
+       @-webkit-keyframes slide {
+           15% {margin-left: 0px;}
+           25% {margin-left: -170px;}
+           35% {margin-left: -170px;}
+           45% {margin-left: -340px;}
+           55% {margin-left: -340px;}
+           65% {margin-left: -510px;}
+           75% {margin-left: -510px;}
+           85% {margin-left: -680px;}
+           95% {margin-left: -680px;}
+       }
+}
+ 
+@media (max-width: 1249px ) {
+    .sidebar{
+        display: none;
+    }
+    .baiviet_khung {
+           position: relative;
+           right: 120px;
+    }
+    .right-slide{
+           position: fixed;
+           left: 10px;
+           font-size: 10px;
+           top: 515px;
+    }
+    img{
+           width: 170px;
+           height: 170px;
+    }
+    .link-newfeed{
+           position: fixed;
+           left: 10px;
+           font-size: 10px;
+           top: 480px;
+           height: 200px;
+           width: 170px;
+    }
+    .newfeed{
+           height: 170px;
+           width: 170px;
+    }
+    @-webkit-keyframes slide {
+           15% {margin-left: 0px;}
+           25% {margin-left: -170px;}
+           35% {margin-left: -170px;}
+           45% {margin-left: -340px;}
+           55% {margin-left: -340px;}
+           65% {margin-left: -510px;}
+           75% {margin-left: -510px;}
+           85% {margin-left: -680px;}
+           95% {margin-left: -680px;}
+    }
 }
