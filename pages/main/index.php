@@ -20,18 +20,26 @@
     while ($row_pro = mysqli_fetch_array($query_pro)) {
     ?>
         <li class="product-list__item col l-2-4 m-4 c-6">
-            <a href="index.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham'] ?>">
-                <div class="product-list__item-img" style="background-image: url('admin/modules/quanlysp/uploads/<?php echo $row_pro['hinhanh'] ?>');"></div>
-                <p class="title-product"><?php echo $row_pro['tensanpham'] ?></p>
-                <p class="price"><?php echo number_format($row_pro['giasp'], 0, ',', '.') . ' VNĐ' ?></p>
-            </a>
+            <div class="product-detail">
+                <a href="index.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham'] ?>">
+                    <div class="product-list__item-img" style="background-image: url('admin/modules/quanlysp/uploads/<?php echo $row_pro['hinhanh'] ?>');"></div>
+                    <p class="title-product"><?php echo $row_pro['tensanpham'] ?></p>
+                    <p class="price"><?php echo number_format($row_pro['giasp'], 0, ',', '.') . ' VNĐ' ?></p>
+                </a>
+                <div class="btn-groups" style="text-align: center;">
+                    <!-- btn purchase -->
+                    <button class="btn-purchase-product">
+                        Mua Ngay
+                    </button>
+                    <!-- btn add product into cartmini -->
+                    <button id="btn-hahaha" class="addcart" type="submit" onclick="addCart(<?php echo $row_pro['id_sanpham'] ?>)">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+
+            </div>
 
             <!-- Phần này có thể đổi class -->
-            <div class="btn-groups" style="text-align: center;">
-                <button class="addcart" type="submit" onclick="addCart(<?php echo $row_pro['id_sanpham'] ?>)">
-                <i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng
-                </button>
-            </div>
         </li>
     <?php
     }
@@ -60,6 +68,29 @@
         color: #000;
         text-align: center;
         text-decoration: none;
+    }
+/*  Start CSS of product include cart btn product */
+    .product-detail {
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 2px;
+    }
+
+    .btn-purchase-product {
+        width: 75%;
+        border-radius: 2px;
+        background-color: rgb(84, 174, 255);
+        border: 2px solid rgb(84, 174, 255);
+    }
+
+    .btn-purchase-product:hover {
+        background-color: #fff;
+        color: rgb(84, 174, 255);
+    }
+
+    .addcart {
+        text-align: center;
+        width: 44px;
     }
 </style>
 <?php

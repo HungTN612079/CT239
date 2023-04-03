@@ -112,6 +112,91 @@ while ($row_chitiet = mysqli_fetch_array($query_chitiet)) {
             </div>
         </div> <!-- END tabs-content -->
     </div> <!-- END tabs -->
+    <div class="product-ratings">
+        <h2 class="product-ratings__title">Đánh giá sản phẩm</h2>
+
+        <div class="product-ratings-overview">
+            <div class="product-ratings-overview__briefing">
+                <div class="product-rating-overview__score">
+                    <span class="product-rating-overview__rating-score">5</span>
+                    <span class="product-rating-overview__rating-score-out-of">trên 5</span>
+                </div>
+                <div class="product-rating-overview__star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+            </div>
+            <div class="product-ratings-overview__filters">
+                <a href="#" class="product-ratings-overview__filter active-rating">Tất cả</a>
+                <a href="#" class="product-ratings-overview__filter">5 Sao (3)</a>
+                <a href="#" class="product-ratings-overview__filter">4 Sao (0)</a>
+                <a href="#" class="product-ratings-overview__filter">3 Sao (0)</a>
+                <a href="#" class="product-ratings-overview__filter">2 Sao (0)</a>
+                <a href="#" class="product-ratings-overview__filter">1 Sao (0)</a>
+                <a href="#" class="product-ratings-overview__filter">Có Bình Luận (1)</a>
+                <a href="#" class="product-ratings-overview__filter">Có Hình ảnh / Video (1)</a>
+            </div>
+        </div>
+
+        <div class="product-ratings__list">
+            <div class="product-ratings__item-comment">
+                <img class="product-ratings__item-avatar" src="https://galaxylands.com.vn/wp-content/uploads/2022/10/ca-si-son-tung-mtp-4.jpg" alt="">
+                <div class="product-ratings__item-main">
+                    <h3 class="product-ratings__item-main-name">HoàngHuy</h3>
+                    <div class="product-rating__item-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-rating__item-time">2020-04-07 00:32</div>
+                    <div class="product-rating__item-content">
+                        Mua dc giá sale cực kì tốt. Chính hãng fpt nguyên seal tự bóc luôn. Mở máy là dc kích hoạt bảo hành. Ban đầu thấy nhiều bình luận ko tích cực cũng nhác tay. Nhưng cuối cũng sp của Apple mall làm mình hài lòng và tin cậy
+                    </div>
+                    <div class="product-rating__item-images">
+                        <div class="product-rating__item-image1"></div>
+                        <div class="product-rating__item-image2"></div>
+                        <div class="product-rating__item-image3"></div>
+                    </div>
+
+                    <div class="product-rating__item-images-full">
+                        <div class="product-rating__item-image-full"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-ratings__item-comment">
+                <img class="product-ratings__item-avatar" src="https://galaxylands.com.vn/wp-content/uploads/2022/10/ca-si-son-tung-mtp-4.jpg" alt="">
+                <div class="product-ratings__item-main">
+                    <h3 class="product-ratings__item-main-name">HoàngHuy</h3>
+                    <div class="product-rating__item-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="product-rating__item-time">2020-04-07 00:32</div>
+                    <div class="product-rating__item-content">
+                        Mua dc giá sale cực kì tốt. Chính hãng fpt nguyên seal tự bóc luôn. Mở máy là dc kích hoạt bảo hành. Ban đầu thấy nhiều bình luận ko tích cực cũng nhác tay. Nhưng cuối cũng sp của Apple mall làm mình hài lòng và tin cậy
+                    </div>
+                    <div class="product-rating__item-images">
+                        <div class="product-rating__item-image1"></div>
+                        <div class="product-rating__item-image2"></div>
+                        <div class="product-rating__item-image3"></div>
+                    </div>
+
+                    <div class="product-rating__item-images-full">
+                        <div class="product-rating__item-image-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <style>
         .tab-content h2 {

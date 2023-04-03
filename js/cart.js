@@ -39,6 +39,16 @@ function deleteCartMini(id) {
   });
 }
 
+// check vao o checkBox thuong hieu
+const typeProduct = document.querySelector('#type-product').textContent; // Lay ten danh mucn hien tai
+const checkBoxs = document.querySelectorAll('.filter-type__checkbox') // Lay toan bo checkbox cua type product
+checkBoxs.forEach(checkBox => { // Duyet qua tung phan tu
+  if(checkBox.value === typeProduct){ // kiem tra value cua danh muc san pham va filter thuong hieu
+    checkBox.setAttribute('checked',"checked") // dung setAtribute thanh checked
+  }
+})
+// End check vao o checkBox thuong hieu
+
 // icon cart show hide
 document.getElementById("shopping-cart").style.display = "none";
 function showHideCart() {

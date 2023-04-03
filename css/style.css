@@ -450,12 +450,10 @@ ul.baiviet li {
 }
 
 #main {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   height: auto;
   width: 90%;
   margin: 0 auto;
-  background-color: white;
-  ;
   padding-bottom: 30px;
 }
 
@@ -470,7 +468,7 @@ ul.list-sidebar {
   border: 1px;
   list-style: none;
   line-height: 27px;
-  border: 1px solid #7c899d;
+  /* border: 1px solid #7c899d; */
 }
 
 ul.list-sidebar li:hover {
@@ -508,6 +506,7 @@ ul.product-list {
   padding-top: 100%;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: 10px;
 }
 
 ul.product-list li img {
@@ -523,12 +522,9 @@ ul.product-list li {
   margin-top: 10px;
 }
 
-ul.product-list li a {
+.ul.product-list li a {
   text-decoration: none;
   display: block;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
 }
 
 ul.product-list li img {
@@ -544,13 +540,14 @@ p.price {
 }
 
 p.title-product {
+  height: 37px;
   text-align: center;
   color: #000;
   font-size: 16px;
   font-weight: bold;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
   overflow: hidden;
   margin: 15px 0;
 }
@@ -812,6 +809,7 @@ ul#tabs-nav li.active {
 
 .btn-groups {
   margin-top: 22px;
+  padding-bottom: 10px;
 }
 
 .btn-groups button {
@@ -819,20 +817,21 @@ ul#tabs-nav li.active {
   font-size: 15px;
   font-family: inherit;
   text-transform: uppercase;
-  padding: 15px 16px;
+  padding: 10px 8px;
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .btn-groups button .fas {
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 .addcart {
   background-color: #ff9f00;
   border: 2px solid #ff9f00;
-  margin-right: 8px;
+  border-radius: 2px;
+  /* margin-right: 8px; */
 }
 
 .addcart:hover {

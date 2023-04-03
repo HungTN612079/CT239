@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/login.css">
     <!-- LINK CSS SHOPPING CART -->
     <link rel="stylesheet" href="css/shoppingCart.css">
+
+    <link rel="stylesheet" href="css/rating-product.css">
     <!-- LINK BOOTSTRAP -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"> -->
     <!-- FONT-AWESOME -->
