@@ -238,6 +238,8 @@
                     include("main/thanhtoan.php");
                 } elseif ($tam == 'dangnhap') {
                     include("main/dangnhap.php");
+                } elseif ($tam == 'quenmatkhau') {
+                    include("main/quenmatkhau.php");   
                 } elseif ($tam == 'timkiem') {
                     include("main/timkiem.php");
                 } elseif ($tam == 'camon') {
