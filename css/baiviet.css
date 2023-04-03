@@ -1,5 +1,6 @@
 .bv{
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
     
 }
 .baiviet_khung{
@@ -44,15 +45,21 @@ p{
     padding: 20px;
 }
 
-
-
+.sidebar{
+    display: none;
+}
+.right-slide{
+    position: fixed;
+    right: 300px;
+    top: 375px;
+}
 .link-newfeed{
     background-color: #333;
     position: fixed;
     height: 250px;
     width: 250px;
-    left: 88px;
-    top: 475px;
+    right: 50px;
+    top: 328px;
     
 }
 .link-newfeed b {
@@ -66,11 +73,7 @@ p{
     bottom: 5px;   
 }
 
-.right-slide{
-    position: fixed;
-    left: 88px;
-    top: 515px;
-}
+
 .newfeed{
     overflow: hidden;
     background-color: #333;
