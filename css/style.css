@@ -197,7 +197,7 @@ ul.list-menu .sub-menu>li:hover.has-child::after {
   z-index: 2;
   color: #1c891f;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .others>.others-border::after {
@@ -300,30 +300,6 @@ ul.list-menu .sub-menu>li:hover.has-child::after {
 }
 
 .account-box li a:hover {
-  transform: scale(1.1);
-  color: #000066;
-}
-
-.cart-mini a {
-  display: inline-block;
-  color: #767676;
-  text-transform: uppercase;
-  padding: 8px 20px;
-  border-radius: 20px;
-  border: 1px solid #bababa;
-  cursor: pointer;
-  font-size: 11px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.cart-mini a .cart-icon {
-  font-size: 22px;
-  color: #1c891f;
-  margin-right: 5px;
-}
-
-.cart-mini a .cart-text:hover {
   transform: scale(1.1);
   color: #000066;
 }

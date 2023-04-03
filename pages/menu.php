@@ -111,10 +111,18 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
                     }
                     ?>
                     <div class="others-user cart-mini">
-                        <a href="index.php?quanly=giohang">
-                            <span class="cart-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                            <strong class="cart-text">Giỏ hàng</strong> &nbsp;(<span class="hd-cart-count"><?php echo $number ?></span>) <br>
-                        </a>
+                        <div class="cart-icon">
+                            <span class="counter"><?php echo $number ?></span>
+                            <i class="fa fa-shopping-cart" onclick="showHideCart()" style="cursor: pointer;"></i>
+                        </div>
+                        <!-- <div class="header-cart-form">
+                            <div class="item-no-content text-center">
+                                <div class="item-no-content-icon"><i class="far fa-shopping-bag"></i></div>
+                                <p class="mb-0 color-text-secondary">
+                                    Bạn chưa có hàng hóa nào trong giỏ hàng
+                                </p>
+                            </div>
+                        </div> -->
                         <div id="shopping-cart">
                             <div class="shopping-cart-list">
                                 <?php
@@ -122,23 +130,27 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
                                     $cart = $_SESSION['cart'];
                                     foreach ($cart as $value) {
                                 ?>
-                                        <div class="product product-widget">
+                                        <div class="product">
                                             <div class="product-thumb">
-                                                <img src="admin/modules/quanlysp/uploads/<?php echo $value['hinhanh'] ?>" alt="">
-                                            </div>
-                                            <div class="product-body">
-                                                <h3 class="product-name">
-                                                    <?php echo number_format($value["giasp"], 0, ',', '.') . ' VNĐ' ?>
-                                                    <span class="qty"> x <?php echo $value['soluong']; ?></span>
-                                                </h3>
-                                                <h2 class="product-name">
-                                                    <a href="">
-                                                        <?php echo $value["tensanpham"] ?>
+                                                <div class="product-thumb-img">
+                                                    <a href="" class="link-img-viewCart">
+                                                        <img src="admin/modules/quanlysp/uploads/<?php echo $value['hinhanh'] ?>" alt="">
+                                                        <div class="product-body">
+                                                            <h2 class="product-name">
+                                                                <a href="">
+                                                                    <?php echo $value["tensanpham"] ?>
+                                                                </a>
+                                                            </h2>
+                                                            <h3 class="product-name">
+                                                                <?php echo number_format($value["giasp"], 0, ',', '.') . ' VNĐ' ?>
+                                                                <span class="qty"> x <?php echo $value['soluong']; ?></span>
+                                                            </h3>
+                                                        </div>
                                                     </a>
-                                                </h2>
+                                                </div>
                                             </div>
-                                            <button onclick="deleteCartMini(<?php echo $key ?>)">
-                                                <i class="fa fa-close"></i>
+                                            <button onclick="deleteCartMini(<?php echo $key ?>)" class="btn-trash">
+                                                <i class="fa fa-trash"></i>
                                             </button>
                                         </div>
                                 <?php
@@ -146,15 +158,24 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
                                 }
                                 ?>
                                 <!-- Phần này có thể sửa đổi class -->
-                                <div>
-                                    <h2>Tổng tiền</h2>
-                                    <span><label id="total"><?php echo number_format($total, 0, ',', '.') . ' VNĐ' ?></label></span>
+                                <div class="viewCartTotal">
+                                    <div>Tổng tiền hàng:</div>
+                                    <div>
+                                        <span><label id="total"><?php echo number_format($total, 0, ',', '.') . ' VNĐ' ?></label></span>
+                                    </div>
                                 </div>
-                                <div class="btn-groups">
-                                    <button class="addcart" type="submit" onclick="addCart(<?php echo $row_chitiet['id_sanpham'] ?>)">
-                                        <i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng
+                                <div class="btn-viewCart">
+                                    <button class="viewCart" type="submit" onclick="addCart(<?php echo $row_chitiet['id_sanpham'] ?>)">
+                                        <a href="index.php?quanly=giohang">
+                                            <i class="fa fa-cart-shopping"></i>
+                                            <span>Xem giỏ hàng</span>
+                                        </a>
                                     </button>
-                                    <button type="button" class="buy-now-btn"><i class="fas fa-wallet"></i>Mua ngay</button>
+                                    <button class="viewCartBuyNow" type="submit" onclick="addCart(<?php echo $row_chitiet['id_sanpham'] ?>)">
+                                        <a href="index.php?quanly=giohang">
+                                            <i class="fa fa-usd"></i> Thanh Toán
+                                        </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -197,6 +218,10 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
 </div>
 
 <style>
+    .slider {
+        display: none;
+    }
+
     .visible-form-search {
         visibility: visible !important;
     }
