@@ -1,64 +1,59 @@
 <?php
-// Kiểm tra xem nút dangnhap có tồn tại hay ko 
-if (isset($_POST['dangnhap'])) {
-	// Lấy dữ liệu input 
-	$email = $_POST['email'];
-	$matkhau = md5($_POST['password']);
-	$sql = "SELECT * FROM dangky WHERE email = '" . $email . "' AND matkhau = '" . $matkhau . "' LIMIT 1";
-	$row = mysqli_query($mysqli, $sql);
-	$count = mysqli_num_rows($row);
-	if ($count > 0) {
-		$row_data = mysqli_fetch_array($row);
-		$_SESSION['dangky'] = $row_data['tenkhachhang'];
-		$_SESSION['email'] = $row_data['email'];
-		$_SESSION['id_dangky'] = $row_data['tenkhachhang'];
-		header("Location: index.php?");
-	} else {
-		echo '<p style="color: red;">Email hoặc Mật khẩu sai, vui lòng nhập lại.</p>';
-		// echo '<script>alert("Tài khoản hoặc Mật khẩu không đúng, vui lòng nhập lại.");</script>';
-	}
+if(isset($_POST['dangnhap'])) {
+    $email = $_POST['email'];
+    $matkhau = md5($_POST['password']);
+    $sql = "SELECT * FROM dangky WHERE email = '".$email."' AND matkhau = '".$matkhau."' LIMIT 1";
+    $row = mysqli_query($mysqli, $sql);
+    $count = mysqli_num_rows($row);
+    if($count > 0) {
+        $row_data = mysqli_fetch_array($row);
+        $_SESSION['dangky'] = $row_data['tenkhachhang'];
+        $_SESSION['email'] = $row_data['email'];
+        $_SESSION['id_dangky'] = $row_data['tenkhachhang'];
+        header("Location: index.php?quanly=giohang");
+        
+    } else {
+        echo '<p style="color: red;">Email hoặc Mật khẩu sai, vui lòng nhập lại.</p>';
+       
+    }
 }
+
 ?>
-<style>
-	::after {
-		box-sizing: border-box;
-	}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Account</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <link rel="stylesheet" href="css/dangnhap.css">
+        <style>
+            .slider{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+    <form action="" autocomplete="off" method="POST">
+    <div class="container_form">
+    <a class="name-form">ĐĂNG NHẬP</a>
 
-	body {
-		background: #282828;
-	}
+      <div class="form">
+          <input type="text" id="email" class="form__input" name="email" autocomplete="off" placeholder=" ">
+          <label for="email" class="form__label">Tài Khoản Email</label>
+      </div>
+      <div class="form">
+          <input type="password" id="password" name="password" class="form__input" autocomplete="off" placeholder=" ">
+          <label for="email" class="form__label">Mật Khẩu</label>
+      </div>
+          <input type="submit" name="dangnhap" value="Đăng nhập" class="submit">
+          <a href="index.php?quanly=quenmatkhau" class="qmk">Quên Mật Khẩu</a>
+        
+      </div>
 
-	.top-main {
-		display: none;
-	}
 
-	#main {
-		border: none;
-	}
+      </div>
 
-	.slider {
-		display: none;
-	}
 
-	.sidebar {
-		display: none;
-	}
+    </body>
 
-	.main-content {
-		width: 100%;
-	}
-</style>
-<div class="content-box">
-	<h1 class="box-title tp_title">Đăng nhập khách hàng</h1>
-	<form action="" autocomplete="off" method="POST" id="formAcount">
-		<div class="form-group">
-			<input type="text" size="50" name="email" class="form-input" placeholder="Email...">
-		</div>
-		<div class="form-group">
-			<input type="password" size="50" name="password" class="form-input" placeholder="Mật khẩu...">
-		</div>
-		<div class="form-group">
-			<button type="submit" name="dangnhap" value="Đăng nhập" class="btn-login">Đăng nhập </button>
-		</div>
-	</form>
-</div>
+</html>
