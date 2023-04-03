@@ -10,7 +10,7 @@ if(isset($_POST['dangnhap'])) {
         $_SESSION['dangky'] = $row_data['tenkhachhang'];
         $_SESSION['email'] = $row_data['email'];
         $_SESSION['id_dangky'] = $row_data['tenkhachhang'];
-        header("Location: index.php?quanly=giohang");
+        header("Location: index.php?quanly=index");
         
     } else {
         echo '<p style="color: red;">Email hoặc Mật khẩu sai, vui lòng nhập lại.</p>';
