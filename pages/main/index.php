@@ -1,17 +1,17 @@
 <?php
-    if(isset($_GET['trang'])) {
-        $page = $_GET['trang'];
-    } else {
-        $page = 1;
-    }
-    if($page == '' || $page == 1) {
-        $begin = 0;
-    } else {
-        $begin = ($page*3)-3;
-    }
+if (isset($_GET['trang'])) {
+    $page = $_GET['trang'];
+} else {
+    $page = 1;
+}
+if ($page == '' || $page == 1) {
+    $begin = 0;
+} else {
+    $begin = ($page * 3) - 3;
+}
 
-    $sql_pro = "SELECT * FROM sanpham,danhmuc WHERE sanpham.id_danhmuc = danhmuc.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT $begin,3";
-    $query_pro = mysqli_query($mysqli,$sql_pro);
+$sql_pro = "SELECT * FROM sanpham,danhmuc WHERE sanpham.id_danhmuc = danhmuc.id_danhmuc ORDER BY sanpham.id_sanpham DESC LIMIT $begin,3";
+$query_pro = mysqli_query($mysqli, $sql_pro);
 
 ?>
 <h3 class="product-type">Sản phẩm mới nhất</h3>
@@ -69,7 +69,13 @@
         text-align: center;
         text-decoration: none;
     }
-/*  Start CSS of product include cart btn product */
+
+    /*  Start CSS of product include cart btn product */
+    .product-detail:hover {
+        border: 1px solid rgb(84, 174, 255);
+        margin-top: -3px;
+    }
+
     .product-detail {
         border: 1px solid #ccc;
         padding: 5px;
@@ -103,11 +109,11 @@ $trang =  ceil($row_count / 3);
     <?php
     for ($i = 1; $i <= $trang; $i++) {
     ?>
-    <li <?php if($i==$page){
-        echo 'style="background: brown;"';
-    } else {
-        echo '';
-    }?>><a href="index.php?trang=<?php echo $i ?>"><?php echo $i ?></a></li>
+        <li <?php if ($i == $page) {
+                echo 'style="background: brown;"';
+            } else {
+                echo '';
+            } ?>><a href="index.php?trang=<?php echo $i ?>"><?php echo $i ?></a></li>
     <?php
     }
     ?>
