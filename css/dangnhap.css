@@ -1,16 +1,5 @@
+/* 
 
-* {
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
-}
-/*
-p{
-    text-align: center;
-    position: relative;
-    top: 300px;
-    right: 110px;
-}*/
 
 .container_form{
     position: relative;
@@ -102,4 +91,128 @@ p{
     top: 40px;
     color: blue;
     text-decoration: none;
+} */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffff;
+}
+
+.login-container h2 {
+    color: blue;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 150%;
+}
+
+#register-popup h2 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: #26bed2;
+    color: #fff;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.register-popup input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 50%;
+}
+
+.register-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 50%;
+    height: 90%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#close-btn {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #dc3545;
+    position: relative;
+    left: 320px;
+    bottom: 20px;
+}
+#close-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .popup-content {
+        width: 80%;
+    }
 }
